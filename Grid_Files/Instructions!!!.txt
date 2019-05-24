@@ -1,0 +1,7 @@
+INSTRUCTIONS TO EXECUTE SCRIPT ON REMOTE MACHINES (USING SELENIUM GRID):
+
+1. First run the script, it will start the hub on the local machine.
+2. Now copy the node.bat + node.json files + browser executables + selenium standalone JAR files to the node machine.
+3. Now execute the node.bat file in the node machine in the directory where the rest of the above files are kept.
+4. Do the same for multiple node machines.
+5. Make appropriate changes to the node.json files based on execution requirements.

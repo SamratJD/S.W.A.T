@@ -14,6 +14,15 @@ local.properties
 .loadpath
 .recommenders
 
+#TestNG
+/test-output
+
+#ExtentReports folder
+/TestResults
+
+#Log4j folder
+/Logs
+
 # External tool builders
 .externalToolBuilders/
 
