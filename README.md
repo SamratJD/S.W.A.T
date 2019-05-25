@@ -26,11 +26,11 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 * Test data run modes are set in the **TestData** excel file in the path: *src/test/resources*.
 * Test cases can be executed in 3 different browsers namely - **Internet Explorer**, **Mozilla Firefox** and **Google Chrome**.
 * **Headless browser testing** is also enabled in this framework. It uses PhantomJS for headless testing.
-* **Selenium Grid** - Remote execution can be also be done using Grid capabilities.
-* **Cloud testing using SauceLabs** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
+* **[Selenium Grid](https://github.com/SeleniumHQ/selenium/wiki/Grid2)** - Remote execution can be also be done using Grid capabilities.
+* **Cloud testing using [SauceLabs](https://saucelabs.com/)** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
 
 * Fresh logs are generated in *HTML* format after each test run. It uses standard log4j for generating the logs.
-* Beautiful and detailed execution reports are generated after each test run. It used the Extent Reports for generating results. 
+* Interactive and detailed execution reports are generated after each test run. It used the **[Extent Reports](http://extentreports.com/)** for generating results. 
 
 ## Test Case Examples
 A sample test case using S.W.A.T. can be found [here](https://github.com/SamratJD/S.W.A.T/blob/master/src/test/java/testCases/BlazeDemoTest.java).
