@@ -5,6 +5,6 @@
 
 **S.W.A.T.** is an open source maven-based framework for UI automation of web applications. You can write test cases based on a predefined keyword library provided in the framework itself. These keywords comprises of mostly all the probable browser interactions.
 
-Test execution is controlled by the **'TestRunner'** file where you can provide which ***Test Case*** will be executed by turning on/off the run mode. Test data is controlled by the **'TestData'** file where you can provide which ***Test Data Set*** will be executed.
+Test execution is controlled by the **'TestRunner'** file where you can provide which **Test Case** will be executed by turning on/off the run mode. Test data is controlled by the **'TestData'** file where you can provide which **Test Data Set** will be executed.
 
 Test execution can be triggered from a ***.bat*** file or running the *TestNG* runner file. Report generation uses the *Extent Reports*, which displays all the test run information as well as test step level screenshots during execution.
