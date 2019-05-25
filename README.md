@@ -2,3 +2,7 @@
 
 # Sustainable Web Automation Tester
 ### A hybrid selenium-based web automation framework
+
+S.W.A.T. is an open source maven-based framework for UI automation of web applications. You can write test cases based on a predefined keyword library provided in the framework itself. These keywords comprises of mostly all the probable browser interactions.
+
+Test execution can be triggered from a .bat file or running the TestNG runner file. Test reporting uses the Extent Reports, which displays all the test run information as well as test step level screenshots.
