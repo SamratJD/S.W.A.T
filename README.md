@@ -31,3 +31,6 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 
 * Fresh logs are generated in *HTML* format after each test run. It uses standard log4j for generating the logs.
 * Beautiful and detailed execution reports are generated after each test run. It used the Extent Reports for generating results. 
+
+## Test Case Examples
+A sample test case using S.W.A.T. can be found [here](https://github.com/SamratJD/S.W.A.T/blob/master/src/test/java/testCases/BlazeDemoTest.java).
