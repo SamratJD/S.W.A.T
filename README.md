@@ -29,7 +29,7 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 * **[Selenium Grid](https://github.com/SeleniumHQ/selenium/wiki/Grid2)** - Remote execution can be also be done using Grid capabilities.
 * **Cloud testing using [SauceLabs](https://saucelabs.com/)** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
 
-* Fresh logs are generated in *HTML* format after each test run. It uses standard **[log4j]**(https://logging.apache.org/log4j/2.x/) for generating the logs.
+* Fresh logs are generated in *HTML* format after each test run. It uses standard **[log4j](https://logging.apache.org/log4j/2.x/)** for generating the logs.
 * Interactive and detailed execution reports are generated after each test run. It used the **[Extent Reports](http://extentreports.com/)** for generating results. 
 
 ## Test Case Examples
