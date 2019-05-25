@@ -13,11 +13,8 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 
 # Features
 * Java knowledge is not required, anyone can write the test scripts.
-
 * It is a selenium-based maven project, using TestNG to run the test cases.
-
 * Testers can refer to the predefined keyword library to write the test cases.
-
 * The keyword library consists of 5 separate libraries for handling different aspects of web automation:
   * *Functional library* - for handling the web-based actions.
   * *Database library* - for fetching data from the database(MySQL/Oracle).
@@ -26,11 +23,8 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
   * *Email library* - for sending email containing logs and test reports of the current execution.
   
 * Test cases can be executed in 3 different browsers namely - **Internet Explorer**, **Mozilla Firefox** and **Google Chrome**.
-
 * **Headless browser testing** is also enabled in this framework. It uses PhantomJS for headless testing.
-
 * **Selenium Grid** - Remote execution can be also be done using Grid capabilities.
-
 * **Cloud testing using SauceLabs** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
 
 * Fresh logs are generated in *HTML* format after each test run. It uses standard log4j for generating the logs.
