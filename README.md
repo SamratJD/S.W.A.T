@@ -22,9 +22,12 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
   * *Sikuli library* - for handling image-based validations in a web page.
   * *Email library* - for sending email containing logs and test reports of the current execution.
   
+* Test case run modes are set in the **TestRunner** excel file in the path: *src/test/resources*.
+* Test data run modes are set in the **TestData** excel file in the path: *src/test/resources*.
 * Test cases can be executed in 3 different browsers namely - **Internet Explorer**, **Mozilla Firefox** and **Google Chrome**.
 * **Headless browser testing** is also enabled in this framework. It uses PhantomJS for headless testing.
 * **Selenium Grid** - Remote execution can be also be done using Grid capabilities.
 * **Cloud testing using SauceLabs** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
 
 * Fresh logs are generated in *HTML* format after each test run. It uses standard log4j for generating the logs.
+* Beautiful and detailed execution reports are generated after each test run. It used the Extent Reports for generating results. 
