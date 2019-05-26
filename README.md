@@ -46,4 +46,18 @@ S.W.A.T. requires Java 8, Maven, TestNG and either Eclipse or IntelliJ.
 
 ## Java
 You can download and install the latest version of Java from [here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
-Then set the path to Java in Environment variables, details given [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
+
+Then set the path to Java in Environment variables, for details refer to this [website](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
+
+## Maven
+You can download and install the latest version of Maven from [here](https://maven.apache.org/download.cgi)
+
+Then set the path to Maven in Environment variables, for details refer to this [website](https://maven.apache.org/guides/getting-started/windows-prerequisites.html)
+
+## IDE Support
+* Eclipse IDE is available for download from [here](https://www.eclipse.org/downloads/) website. No need for separate installation, it can be directly run from the eclipse executable file.
+* IntelliJ IDEA can be download from [this](https://www.jetbrains.com/idea/download/) website. Once downloaded, install IntelliJ in your system.
+
+## TestNG
+* Eclipse IDE requires TestNG to be installed separately. Details can be found [here](https://testng.org/doc/eclipse.html).
+* IntelliJ IDEA comes with pre-installed TestNG.
