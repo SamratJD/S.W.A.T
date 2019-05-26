@@ -40,3 +40,10 @@ A sample test case using S.W.A.T. can be found [here](https://github.com/SamratJ
 * Testing framework used in creating S.W.A.T. - [TestNG](https://testng.org/doc/)
 * Build tool for managing the different APIs used - [Apache Maven](https://maven.apache.org/)
 * Creating reports - [Extent Reports](http://extentreports.com/)
+
+# Getting Started
+S.W.A.T. requires Java 8, Maven, TestNG and either Eclipse or IntelliJ.
+
+## Java
+You can download and install the latest version of Java from [here](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+Then set the path to Java in Environment variables, details given [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
