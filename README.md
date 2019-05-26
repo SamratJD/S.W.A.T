@@ -126,63 +126,47 @@ This library consists of keywords for handling web actions based on image inputs
 ## Email Library
 This library consists of a keyword for sending email reports with the last execution run containing the test case information along with the Test report which was generated in zipped format.
 
-## Functional Library Keywords:
-| Keywords                                            | Parameters                       | Description                                                    |
-|-----------------------------------------------------|----------------------------------|----------------------------------------------------------------|
-| minimizeAllWindows()                                |                                  | To minimize all the open windows                               |
-| openURL(String url)                                 | String url                       | To navigate to a URL                                           |
-| verifyPageTitle(String expectedTitle)               | String expectedTitle             | To verify the page title                                       |
-| isSelected(By by)                                   | By by                            | To verify if the checkbox/radiobutton is selected or not       |
-| selectDropdownByValue(By by, String value)          | By by, String value              | To select from a drop down by using value                      |
-| selectDropdownByIndex(By by, int index)             | By by, int index                 | To select from a drop down by using index                      |
-| selectDropdownByText(By by, String text)            | By by, String text               | To select from a drop down by using text                       |
-| verifyText(By by, String expected)                  | By by, String expected           | To verify the text of a label etc.                             |
-| clickOnElement(String elementName, By by)           | String elementName, By by        | To click on a link/button etc.                                 |
-| verifyElementPresent(String elementName, By by)     | String elementName, By by        | To verify if the element is presenet in the web page or not    |
-| setText(By by, String text)                         | By by, String text               | To enter text in a textbox                                     |
-| setSecureText(By by, String encodedtext)            | By by, String encodedtext        | To enter encoded text in a textbox                             |
-| waitForElementPresent(By by, int timeToWait)        | By by, int timeToWait            | To wait for a particular web element to be present in web page |
-| waitForPageToLoad()                                 |                                  | To wait for a web page to load                                 |
-| acceptAlert(By by)                                  | By by                            | To accept an alert pop-up                                      |
-| verifyAlertText(By by, String expectedText)         | By by, String expectedText       | To verify text in an alert pop-up                              |
-| enterTextAlert(By by, String input)                 | By by, String input              | To enter text in an alert pop-up                               |
-| switchWindow()                                      |                                  | To switch to child window                                      |
-| switchFrame(By by)                                  | By by                            | To switch to frame containing the web element                  |
-| windowAuthenticationFirefox()                       |                                  | To hand windows authentication pop-up for Firefox browser      |
-| windowAuthenticationIE()                            |                                  | To hand windows authentication pop-up for I.E. browser         |
-| windowAuthenticationChrome()                        |                                  | To hand windows authentication pop-up for Chrome browser       |
-| fileDownload()                                      |                                  | To download a file from web page                               |
-| killChrome()                                        |                                  | To kill chrome driver process                                  |
-| killFirefox()                                       |                                  | To kill gecko driver process                                   |
-| killIE()                                            |                                  | To kill IE driver process                                      |
-| authenticatePopUp(String username, String password) | String username, String password | To handle authentication pop-up using keyboard actions         |
-| captureScreen()                                     |                                  | To get the screenshot of the current web page                  |
-| getcurrentdateandtime()                             |                                  | To fetch the current date and time                             |
-
-## Database Library Keywords:
-| Keywords                                   | Parameters                      | Description                         |
-|--------------------------------------------|---------------------------------|-------------------------------------|
-| executeDB(String columnName, String query) | String columnName, String query | To fetch the data from the database |
-
-## PDF Library Keywords:
+## Keywords List:
 | Keywords                                                                                   | Parameters                                                     | Description                                                                    |
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------|
+| minimizeAllWindows()                                                                       |                                                                | To minimize all the open windows                                               |
+| openURL(String url)                                                                        | String url                                                     | To navigate to a URL                                                           |
+| verifyPageTitle(String expectedTitle)                                                      | String expectedTitle                                           | To verify the page title                                                       |
+| isSelected(By by)                                                                          | By by                                                          | To verify if the checkbox/radiobutton is selected or not                       |
+| selectDropdownByValue(By by, String value)                                                 | By by, String value                                            | To select from a drop down by using value                                      |
+| selectDropdownByIndex(By by, int index)                                                    | By by, int index                                               | To select from a drop down by using index                                      |
+| selectDropdownByText(By by, String text)                                                   | By by, String text                                             | To select from a drop down by using text                                       |
+| verifyText(By by, String expected)                                                         | By by, String expected                                         | To verify the text of a label etc.                                             |
+| clickOnElement(String elementName, By by)                                                  | String elementName, By by                                      | To click on a link/button etc.                                                 |
+| verifyElementPresent(String elementName, By by)                                            | String elementName, By by                                      | To verify if the element is presenet in the web page or not                    |
+| setText(By by, String text)                                                                | By by, String text                                             | To enter text in a textbox                                                     |
+| setSecureText(By by, String encodedtext)                                                   | By by, String encodedtext                                      | To enter encoded text in a textbox                                             |
+| waitForElementPresent(By by, int timeToWait)                                               | By by, int timeToWait                                          | To wait for a particular web element to be present in web page                 |
+| waitForPageToLoad()                                                                        |                                                                | To wait for a web page to load                                                 |
+| acceptAlert(By by)                                                                         | By by                                                          | To accept an alert pop-up                                                      |
+| verifyAlertText(By by, String expectedText)                                                | By by, String expectedText                                     | To verify text in an alert pop-up                                              |
+| enterTextAlert(By by, String input)                                                        | By by, String input                                            | To enter text in an alert pop-up                                               |
+| switchWindow()                                                                             |                                                                | To switch to child window                                                      |
+| switchFrame(By by)                                                                         | By by                                                          | To switch to frame containing the web element                                  |
+| windowAuthenticationFirefox()                                                              |                                                                | To hand windows authentication pop-up for Firefox browser                      |
+| windowAuthenticationIE()                                                                   |                                                                | To hand windows authentication pop-up for I.E. browser                         |
+| windowAuthenticationChrome()                                                               |                                                                | To hand windows authentication pop-up for Chrome browser                       |
+| fileDownload()                                                                             |                                                                | To download a file from web page                                               |
+| killChrome()                                                                               |                                                                | To kill chrome driver process                                                  |
+| killFirefox()                                                                              |                                                                | To kill gecko driver process                                                   |
+| killIE()                                                                                   |                                                                | To kill IE driver process                                                      |
+| authenticatePopUp(String username, String password)                                        | String username, String password                               | To handle authentication pop-up using keyboard actions                         |
+| captureScreen()                                                                            |                                                                | To get the screenshot of the current web page                                  |
+| getcurrentdateandtime()                                                                    |                                                                | To fetch the current date and time                                             |
+| executeDB(String columnName, String query)                                                 | String columnName, String query                                | To fetch the data from the database                                            |
+| sendEmailOnComplete()                                                                      |                                                                | To send an email containing the test results                                   |
 | checkPDFPageCount(String filePath, int length)                                             | String filePath, int length                                    | To check the count of pages in PDF                                             |
 | comparePDFText(String file1Path, String file2Path)                                         | String file1Path, String file2Path                             | To compare 2 PDF documents                                                     |
 | comparePDFTextSpecificPage(String file1Path, String file2Path, int pageStart, int pageEnd) | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents from a mentioned start page to a mentioned end page |
 | comparePDFImageModeSame(String file1Path, String file2Path, int pageStart, int pageEnd)    | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents based on image accuracy                             |
 | comparePDFWithoutNumbers(String file1Path, String file2Path, int pageStart, int pageEnd)   | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents without numbers                                     |
-
-## Sikuli Library Keywords:
-| Keywords                                                | Parameters                                  | Description                                            |
-|---------------------------------------------------------|---------------------------------------------|--------------------------------------------------------|
-| clickObject(String path , String fileName)              | String path , String fileName               | To click on an object using image technique            |
-| doubleClickObject(String path , String fileName)        | String path , String fileName               | To double click on an object using image technique     |
-| rightClickObject(String path , String fileName)         | String path , String fileName               | To right click on an object using image technique      |
-| typeObject(String path , String fileName , String text) | String path , String fileName , String text | To type on an object based on image technique          |
-| objectExists(String path , String fileName)             | String path , String fileName               | To verify if an object exists based on image technique |
-
-## Email Library Keywords:
-| Keywords              | Parameters | Description                                  |
-|-----------------------|------------|----------------------------------------------|
-| sendEmailOnComplete() |            | To send an email containing the test results |
+| clickObject(String path , String fileName)                                                 | String path , String fileName                                  | To click on an object using image technique                                    |
+| doubleClickObject(String path , String fileName)                                           | String path , String fileName                                  | To double click on an object using image technique                             |
+| rightClickObject(String path , String fileName)                                            | String path , String fileName                                  | To right click on an object using image technique                              |
+| typeObject(String path , String fileName , String text)                                    | String path , String fileName , String text                    | To type on an object based on image technique                                  |
+| objectExists(String path , String fileName)                                                | String path , String fileName                                  | To verify if an object exists based on image technique                         |
