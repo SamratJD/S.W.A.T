@@ -61,3 +61,6 @@ Then set the path to Maven in Environment variables, for details refer to this [
 ## TestNG
 * Eclipse IDE requires TestNG to be installed separately. Details can be found [here](https://testng.org/doc/eclipse.html).
 * IntelliJ IDEA comes with pre-installed TestNG.
+
+## Framework Configuration
+Once all the above pre-requisites have been setup, you can [clone](https://github.com/SamratJD/S.W.A.T.git) or download the S.W.A.T. framework in your system and import it as a Maven project.
