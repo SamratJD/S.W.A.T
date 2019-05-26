@@ -160,3 +160,29 @@ This library consists of a keyword for sending email reports with the last execu
 | getcurrentdateandtime()                             |                                  | To fetch the current date and time                             |
 
 ## Database Library Keywords:
+| Keywords                                   | Parameters                      | Description                         |
+|--------------------------------------------|---------------------------------|-------------------------------------|
+| executeDB(String columnName, String query) | String columnName, String query | To fetch the data from the database |
+
+## PDF Library Keywords:
+| Keywords                                                                                   | Parameters                                                     | Description                                                                    |
+|--------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------|
+| checkPDFPageCount(String filePath, int length)                                             | String filePath, int length                                    | To check the count of pages in PDF                                             |
+| comparePDFText(String file1Path, String file2Path)                                         | String file1Path, String file2Path                             | To compare 2 PDF documents                                                     |
+| comparePDFTextSpecificPage(String file1Path, String file2Path, int pageStart, int pageEnd) | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents from a mentioned start page to a mentioned end page |
+| comparePDFImageModeSame(String file1Path, String file2Path, int pageStart, int pageEnd)    | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents based on image accuracy                             |
+| comparePDFWithoutNumbers(String file1Path, String file2Path, int pageStart, int pageEnd)   | String file1Path, String file2Path, int pageStart, int pageEnd | To compare 2 PDF documents without numbers                                     |
+
+## Sikuli Library Keywords:
+| Keywords                                                | Parameters                                  | Description                                            |
+|---------------------------------------------------------|---------------------------------------------|--------------------------------------------------------|
+| clickObject(String path , String fileName)              | String path , String fileName               | To click on an object using image technique            |
+| doubleClickObject(String path , String fileName)        | String path , String fileName               | To double click on an object using image technique     |
+| rightClickObject(String path , String fileName)         | String path , String fileName               | To right click on an object using image technique      |
+| typeObject(String path , String fileName , String text) | String path , String fileName , String text | To type on an object based on image technique          |
+| objectExists(String path , String fileName)             | String path , String fileName               | To verify if an object exists based on image technique |
+
+## Email Library Keywords:
+| Keywords              | Parameters | Description                                  |
+|-----------------------|------------|----------------------------------------------|
+| sendEmailOnComplete() |            | To send an email containing the test results |
