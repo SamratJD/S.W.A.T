@@ -67,10 +67,47 @@ Once all the above pre-requisites have been setup, you can [clone](https://githu
 
 ## Folder Structure
 A test case is of the `.java` file extension.
-As per the Maven convention, all the `*.java` source files are in the path `src\main\java`. The test cases are in the path `src\test\java`.
-All the data files (e.g `*.xlsx`, `*.properties` and `*.xml` etc)are kept in the path `src\test\resources`.
+As per the Maven convention, all the `*.java` source files are in the path `src/main/java`. The test cases are in the path `src/test/java`.
+All the data files (e.g `*.xlsx`, `*.properties` and `*.xml` etc)are kept in the path `src/test/resources`.
 
 
 ```
-
+S.W.A.T.
+|
++---src/main/java
+|	|
+|	+---frameworkRunner
+|	+---libraries
+|	+---listeners
+|	\---utilities
+|
++---src/test/java
+|	|
+|	+---pageObjects
+|	|	|
+|	|	+---BlazeDemoRegisterPage.java
+|	|	\---BlazeDemoLoginPage.java
+|	|
+|	+---sampleTests
+|	+---testCases
+|	|	|
+|	|	+---BlazeDemoTest.java
+|	|	
+|	\---testCaseTemplate
+|	
++---src/test/resources
+|	|
+|	+---features
+|	+---runner
+|	|	|
+|	|	+---TestRunner.xlsx
+|	|	
+|	\---testData
+|		|
+|		+---TestData.xlsx
+|
++---Logs
++---TestResults
++---pom.xml
+\---Runner.bat
 ```
