@@ -112,3 +112,16 @@ S.W.A.T.
 \---Runner.bat
 ```
 
+# Predefined Libraries
+There are 5 libraries which have been provided with this framework for ease of use.
+
+## Functional Library
+This library consists of keywords which would help the user to write test cases for performing various actions in a web page.  This includes browser navigation, web element actions, alert handling, window handling, authentication pop-ups and screenshot capture methods etc.
+## Database Library
+This library consists of keywords to fetch data from the database when the *column name* and *SQL query* is provided. S.W.A.T. is configured to handle both MySQL and Oracle databases.
+## PDF Library
+This library consists of keywords for implementing PDF validations. It contains methods for comparision of 2 PDFs, returning the page count of a PDF file etc.
+## Sikuli Library
+This library consists of keywords for handling web actions based on image inputs provided by the user. It consists of methods such as click on object or verify if object is present in web page or not etc.
+## Email Library
+This library consists of a keyword for sending email reports with the last execution run containing the test case information along with the Test report which was generated in zipped format.
