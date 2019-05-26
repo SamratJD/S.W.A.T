@@ -125,3 +125,38 @@ This library consists of keywords for implementing PDF validations. It contains 
 This library consists of keywords for handling web actions based on image inputs provided by the user. It consists of methods such as click on object or verify if object is present in web page or not etc.
 ## Email Library
 This library consists of a keyword for sending email reports with the last execution run containing the test case information along with the Test report which was generated in zipped format.
+
+## Functional Library Keywords:
+| Keywords                                            | Parameters                       | Description                                                    |
+|-----------------------------------------------------|----------------------------------|----------------------------------------------------------------|
+| minimizeAllWindows()                                |                                  | To minimize all the open windows                               |
+| openURL(String url)                                 | String url                       | To navigate to a URL                                           |
+| verifyPageTitle(String expectedTitle)               | String expectedTitle             | To verify the page title                                       |
+| isSelected(By by)                                   | By by                            | To verify if the checkbox/radiobutton is selected or not       |
+| selectDropdownByValue(By by, String value)          | By by, String value              | To select from a drop down by using value                      |
+| selectDropdownByIndex(By by, int index)             | By by, int index                 | To select from a drop down by using index                      |
+| selectDropdownByText(By by, String text)            | By by, String text               | To select from a drop down by using text                       |
+| verifyText(By by, String expected)                  | By by, String expected           | To verify the text of a label etc.                             |
+| clickOnElement(String elementName, By by)           | String elementName, By by        | To click on a link/button etc.                                 |
+| verifyElementPresent(String elementName, By by)     | String elementName, By by        | To verify if the element is presenet in the web page or not    |
+| setText(By by, String text)                         | By by, String text               | To enter text in a textbox                                     |
+| setSecureText(By by, String encodedtext)            | By by, String encodedtext        | To enter encoded text in a textbox                             |
+| waitForElementPresent(By by, int timeToWait)        | By by, int timeToWait            | To wait for a particular web element to be present in web page |
+| waitForPageToLoad()                                 |                                  | To wait for a web page to load                                 |
+| acceptAlert(By by)                                  | By by                            | To accept an alert pop-up                                      |
+| verifyAlertText(By by, String expectedText)         | By by, String expectedText       | To verify text in an alert pop-up                              |
+| enterTextAlert(By by, String input)                 | By by, String input              | To enter text in an alert pop-up                               |
+| switchWindow()                                      |                                  | To switch to child window                                      |
+| switchFrame(By by)                                  | By by                            | To switch to frame containing the web element                  |
+| windowAuthenticationFirefox()                       |                                  | To hand windows authentication pop-up for Firefox browser      |
+| windowAuthenticationIE()                            |                                  | To hand windows authentication pop-up for I.E. browser         |
+| windowAuthenticationChrome()                        |                                  | To hand windows authentication pop-up for Chrome browser       |
+| fileDownload()                                      |                                  | To download a file from web page                               |
+| killChrome()                                        |                                  | To kill chrome driver process                                  |
+| killFirefox()                                       |                                  | To kill gecko driver process                                   |
+| killIE()                                            |                                  | To kill IE driver process                                      |
+| authenticatePopUp(String username, String password) | String username, String password | To handle authentication pop-up using keyboard actions         |
+| captureScreen()                                     |                                  | To get the screenshot of the current web page                  |
+| getcurrentdateandtime()                             |                                  | To fetch the current date and time                             |
+
+## Database Library Keywords:
