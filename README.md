@@ -171,12 +171,26 @@ This library consists of a keyword for sending email reports with the last execu
 | typeObject(String path , String fileName , String text)                                    | String path , String fileName , String text                    | To type on an object based on image technique                                  |
 | objectExists(String path , String fileName)                                                | String path , String fileName                                  | To verify if an object exists based on image technique                         |
 
+  
 # Test Reports
 Detailed and interactive reports are generated after each test execution. This framework uses the ExtentReports library created by *Anshoo Arora*, for generating test results at run time. Test step level screenshots are taken and are attached to the report.
 
 ![S.W.A.T. Report](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Report.gif)
 
+  
 # Logs
 Fresh test execution logs are generated after every test run. The logs are in HTML format for better readability purposes. It uses the *Apache log4j* library for creating these logs.
 
 ![S.W.A.T. Logs](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Logs.gif)
+
+
+# Contributing
+### Step 1
+* Option 1
+  * Fork this repository in your GitHub profile.
+* Option 2 
+  * Clone this repository in your local system.
+### Step 2
+Make updates,additions etc. to existing framework features.
+### Step 3
+Create a new `Pull Request` so that these changes can be viewed and merged with S.W.A.T.
