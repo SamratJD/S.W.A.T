@@ -191,6 +191,13 @@ Fresh test execution logs are generated after every test run. The logs are in HT
 * Option 2 
   * Clone this repository in your local system.
 ### Step 2
-Make updates,additions etc. to existing framework features.
+Make updates, additions etc. to existing framework features.
 ### Step 3
 Create a new `Pull Request` so that these changes can be viewed and merged with S.W.A.T.
+
+# FAQs
+
+# Support
+Reach out to me at one of the below places!
+* Email at SamratY92@gmail.com
+* Facebook at [Samrat Nag](https://www.facebook.com/samrat.nag1)
