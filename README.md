@@ -174,4 +174,4 @@ This library consists of a keyword for sending email reports with the last execu
 # Test Reports
 Detailed and  interactive reports are generated after each test execution. It uses the ExtentReports for generating test results at run time. Test step level screenshots are taken and are attached to the report.
 
-[S.W.A.T. Report](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Report.gif)
+![S.W.A.T. Report](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Report.gif)
