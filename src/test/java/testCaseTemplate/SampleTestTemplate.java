@@ -36,6 +36,7 @@ public class SampleTestTemplate extends TestBase {
 		// Write test steps below:
 		// ===================================================================================================================================================================
 
+		functions.openURL("Enter URL here");
 	}
 
 	@AfterMethod()
