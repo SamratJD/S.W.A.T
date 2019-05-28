@@ -170,3 +170,8 @@ This library consists of a keyword for sending email reports with the last execu
 | rightClickObject(String path , String fileName)                                            | String path , String fileName                                  | To right click on an object using image technique                              |
 | typeObject(String path , String fileName , String text)                                    | String path , String fileName , String text                    | To type on an object based on image technique                                  |
 | objectExists(String path , String fileName)                                                | String path , String fileName                                  | To verify if an object exists based on image technique                         |
+
+# Test Reports
+Detailed and  interactive reports are generated after each test execution. It uses the ExtentReports for generating test results at run time. Test step level screenshots are taken and are attached to the report.
+
+[S.W.A.T. Report](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Report.gif)
