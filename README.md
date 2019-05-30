@@ -10,6 +10,19 @@ Test execution is controlled by the **'TestRunner'** file where you can provide 
 Test execution can be triggered from a ***.bat*** file or running the *TestNG* runner file. Report generation uses the *Extent Reports*, which displays all the test run information as well as test step level screenshots during execution.
 
 # Index
+| **SECTIONS**             | **SUB-SECTIONS**                    |
+| ----------------     | ------------------------------- |
+| [An Introduction](#sustainable-web-automation-tester)   |
+| [Features](#features)      | [Test Case Examples](#test-case-examples) : [References](#references)|
+| [Getting Started](#getting-started) | [Java](#java) : [Maven](#maven) : [IDE Support](#ide-support) : [TestNG](#testng) : [Framework Configuration](#framework-configuration) : [Folder Structure](#folder-structure) |
+|[Predefined Libraries](#predefined-libraries) | [Functional Library](#functional-library) : [Database Library](#database-library) : [PDF Library](#pdf-library) : [Sikuli Library](#sikuli-library) : [Email Library](#email-library) : [Keywords List](#keywords-list)|
+|[Configuring the Test Cases and Test Data](#configuring-the-test-cases-and-test-data) | [Configuring the TestRunner sheet](#configuring-the-testrunner-sheet) : [Configuring the TestData sheet](#configuring-the-testdata-sheet) |
+| [Running the tests](#running-the-tests) | [Running the FrameworkRunner.xml](#running-the-frameworkrunner.xml) : [Running the Runner.bat file](#running-the-runner.bat-file) |
+| [Test Reports](#test-reports)      |
+| [Logs](#logs)|
+|[Contributing](#contributing)|
+|[FAQs](#faqs)|
+|[Support](#support)|
 
 # Features
 * Java knowledge is not required, anyone can write the test scripts.
@@ -30,7 +43,7 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 * **Cloud testing using [SauceLabs](https://saucelabs.com/)** - this feature is also enabled, so that you can execute test cases remotely in the SauceLabs server.
 
 * Fresh logs are generated in *HTML* format after each test run. It uses standard **[log4j](https://logging.apache.org/log4j/2.x/)** for generating the logs.
-* Interactive and detailed execution reports are generated after each test run. It used the **[Extent Reports](http://extentreports.com/)** for generating results. 
+* Interactive and detailed execution reports are generated after each test run. It used the **[Extent Reports](http://extentreports.com/)** for generating results. s
 
 ## Test Case Examples
 A sample test case using S.W.A.T. can be found [here](https://github.com/SamratJD/S.W.A.T/blob/master/src/test/java/testCases/BlazeDemoTest.java).
