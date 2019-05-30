@@ -31,7 +31,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-			
+
 		</plugins>
 		<resources>
 			<resource>
@@ -138,11 +138,11 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>phantomJS</groupId>
-		<artifactId>phantomJSDriver</artifactId>
-		<scope>system</scope>
-		<version>2.0.0</version>
-		<systemPath>${basedir}\Drivers\phantomjsdriver-2.0.0.jar</systemPath>
+			<groupId>phantomJS</groupId>
+			<artifactId>phantomJSDriver</artifactId>
+			<scope>system</scope>
+			<version>2.0.0</version>
+			<systemPath>${basedir}\Drivers\phantomjsdriver-2.0.0.jar</systemPath>
 		</dependency>
-   </dependencies>
+	</dependencies>
 </project>
