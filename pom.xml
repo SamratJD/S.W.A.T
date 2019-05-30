@@ -144,5 +144,5 @@
 		<version>2.0.0</version>
 		<systemPath>${basedir}\Drivers\phantomjsdriver-2.0.0.jar</systemPath>
 		</dependency>
-	</dependencies>
+   </dependencies>
 </project>
