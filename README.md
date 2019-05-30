@@ -35,6 +35,8 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 ## Test Case Examples
 A sample test case using S.W.A.T. can be found [here](https://github.com/SamratJD/S.W.A.T/blob/master/src/test/java/testCases/BlazeDemoTest.java).
 
+<img src="https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Test%20case.png" title="S.W.A.T." alt="S.W.A.T." width="800" >
+
 ## References
 * Need for hybrid automation frameworks - [ToolsQA](https://www.toolsqa.com/selenium-webdriver/selenium-automation-hybrid-framework/)
 * Testing framework used in creating S.W.A.T. - [TestNG](https://testng.org/doc/)
