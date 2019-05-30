@@ -17,7 +17,7 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 | [Getting Started](#getting-started) | [Java](#java) : [Maven](#maven) : [IDE Support](#ide-support) : [TestNG](#testng) : [Framework Configuration](#framework-configuration) : [Folder Structure](#folder-structure) |
 |[Predefined Libraries](#predefined-libraries) | [Functional Library](#functional-library) : [Database Library](#database-library) : [PDF Library](#pdf-library) : [Sikuli Library](#sikuli-library) : [Email Library](#email-library) : [Keywords List](#keywords-list)|
 |[Configuring the Test Cases and Test Data](#configuring-the-test-cases-and-test-data) | [Configuring the TestRunner sheet](#configuring-the-testrunner-sheet) : [Configuring the TestData sheet](#configuring-the-testdata-sheet) |
-| [Running the tests](#running-the-tests) | [Running the FrameworkRunner.xml](#running-the-frameworkrunner.xml) : [Running the Runner.bat file](#running-the-runner.bat-file) |
+| [Running the tests](#running-the-tests) | [Running the FrameworkRunner](#running-the-frameworkrunner) : [Running the Runner file](#running-the-runner-file) |
 | [Test Reports](#test-reports)      |
 | [Logs](#logs)|
 |[Contributing](#contributing)|
@@ -198,12 +198,12 @@ Navigate to the `src/test/resources/testData` folder path and open the *TestData
 <img src="https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/TestData%20Sheet.png" title="S.W.A.T." alt="S.W.A.T." width="800" >
 
 # Running the Tests:
-## Running the FrameworkRunner.xml
+## Running the FrameworkRunner
 Inside any IDE like *Eclipse* or *IntelliJ* navigate to the FrameworkRunner.xml file inside `src/main/java/Runner` package and choose the option Run As `TestNG Suite` as shown below and all the test execution will begin.
 
 ![Runner method 1](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Runner1.gif)
 
-## Running the `Runner.bat` file
+## Running the `Runner` file
 As stated earlier this is a maven project, and setting have been added so that we can execute the test cases using maven as well. Using Windows Explorer navigate to the path where the project is kept in local machine. Double click on the Runner.bat file which is present in project folder and test execution will get started.
 
 ![Runner method 2](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Runner2.gif)
