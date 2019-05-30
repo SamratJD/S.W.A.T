@@ -173,6 +173,16 @@ This library consists of a keyword for sending email reports with the last execu
 | typeObject(String path , String fileName , String text)                                    | String path , String fileName , String text                    | To type on an object based on image technique                                  |
 | objectExists(String path , String fileName)                                                | String path , String fileName                                  | To verify if an object exists based on image technique                         |
 
+# Configuring the Test Cases and Test Data:
+## Configuring the TestRunner sheet
+Navigate to the `src/test/resources/runner` folder path and open the *TestRunner.xlsx* sheet. Set which test cases will get executed and in which browser to be executed.
+
+<img src="https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/TestRunner%20Sheet.png" title="S.W.A.T." alt="S.W.A.T." width="800" >
+
+## Configuring the TestData sheet
+Navigate to the `src/test/resources/testData` folder path and open the *TestData.xlsx* sheet. Provide the sheet name same as the test case name provided earlier in the *TestRunner* sheet. Create column headers for all test data and one named `RunMode`. Now specify which test data suite will be executed by putting the appropriate run mode i.e. **Y** or **N**.
+
+<img src="https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/TestData%20Sheet.png" title="S.W.A.T." alt="S.W.A.T." width="800" >
 
 # Running the Tests:
 ## Running the FrameworkRunner.xml
