@@ -173,7 +173,18 @@ This library consists of a keyword for sending email reports with the last execu
 | typeObject(String path , String fileName , String text)                                    | String path , String fileName , String text                    | To type on an object based on image technique                                  |
 | objectExists(String path , String fileName)                                                | String path , String fileName                                  | To verify if an object exists based on image technique                         |
 
-  
+
+# Running the Tests:
+## Running the FrameworkRunner.xml
+Inside any IDE like *Eclipse* or *IntelliJ* navigate to the FrameworkRunner.xml file inside `src/main/java/Runner` package and choose the option Run As `TestNG Suite` as shown below and all the test execution will begin.
+
+![Runner method 1](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Runner1.gif)
+
+## Running the `Runner.bat` file
+As stated earlier this is a maven project, and setting have been added so that we can execute the test cases using maven as well. Using Windows Explorer navigate to the path where the project is kept in local machine. Double click on the Runner.bat file which is present in project folder and test execution will get started.
+
+![Runner method 2](https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework%20Runner2.gif)
+
 # Test Reports
 Detailed and interactive reports are generated after each test execution. This framework uses the ExtentReports library created by *Anshoo Arora*, for generating test results at run time. Test step level screenshots are taken and are attached to the report.
 
