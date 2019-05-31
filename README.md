@@ -12,17 +12,17 @@ Test execution can be triggered from a ***.bat*** file or running the *TestNG* r
 # Index
 | **SECTIONS**             | **SUB-SECTIONS**                    |
 | ----------------     | ------------------------------- |
-| [An Introduction](#sustainable-web-automation-tester)   |
+| [An Introduction](#sustainable-web-automation-tester)   | [Why S.W.A.T ?](#sustainable-web-automation-tester)|
 | [Features](#features)      | [Test Case Examples](#test-case-examples) : [References](#references)|
 | [Getting Started](#getting-started) | [Java](#java) : [Maven](#maven) : [IDE Support](#ide-support) : [TestNG](#testng) : [Framework Configuration](#framework-configuration) : [Folder Structure](#folder-structure) |
 |[Predefined Libraries](#predefined-libraries) | [Functional Library](#functional-library) : [Database Library](#database-library) : [PDF Library](#pdf-library) : [Sikuli Library](#sikuli-library) : [Email Library](#email-library) : [Keywords List](#keywords-list)|
 |[Configuring the Test Cases and Test Data](#configuring-the-test-cases-and-test-data) | [Configuring the TestRunner sheet](#configuring-the-testrunner-sheet) : [Configuring the TestData sheet](#configuring-the-testdata-sheet) |
 | [Running the tests](#running-the-tests) | [Running the FrameworkRunner](#running-the-frameworkrunner) : [Running the Runner file](#running-the-runner-file) |
-| [Test Reports](#test-reports)      |
-| [Logs](#logs)|
-|[Contributing](#contributing)|
-|[FAQs](#faqs)|
-|[Support](#support)|
+| [Test Reports](#test-reports)      | [Generating the Reports](#test-reports)|
+| [Logs](#logs)| [Generating the Logs](#logs)|
+|[Contributing](#contributing)| [How to contribute to S.W.A.T. ?](#contributing)|
+|[FAQs](#faqs)| [Facing problems ?](#faqs)|
+|[Support](#support)| [Where to contact ?](#support)|
 
 # Features
 * Java knowledge is not required, anyone can write the test scripts.
