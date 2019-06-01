@@ -235,7 +235,8 @@ Make updates, additions etc. to existing framework features.
 Create a new `Pull Request` so that these changes can be viewed and merged with S.W.A.T.
 
 # FAQs
-
+* What is planned for Release v2.0?
+  * Cucumber integration is planned.
 # Support
 Reach out to me at one of the below places!
 * Email at SamratY92@gmail.com
