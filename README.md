@@ -1,6 +1,9 @@
 <a href="https://github.com/SamratJD/S.W.A.T"><img src="https://github.com/SamratJD/S.W.A.T/blob/master/Misc_Files/Framework_Logo.png" title="S.W.A.T." alt="S.W.A.T." width="200"></a>
 
 # Sustainable Web Automation Tester
+[![GitHub issues](https://img.shields.io/github/issues/SamratJD/S.W.A.T.svg?style=popout)](https://github.com/SamratJD/S.W.A.T/issues)
+[![GitHub license](https://img.shields.io/github/license/SamratJD/S.W.A.T.svg?style=popout)](https://github.com/SamratJD/S.W.A.T/blob/master/LICENSE)
+
 ### A hybrid selenium-based web automation framework
 
 **S.W.A.T.** is an open source maven-based framework for UI automation of web applications. You can write test cases based on a predefined keyword library provided in the framework itself. These keywords comprises of mostly all the probable browser interactions.
