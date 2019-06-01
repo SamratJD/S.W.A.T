@@ -127,13 +127,13 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Web Element function
-	 * @param by
+	 * @param objLocator
 	 * @return String
 	 * @throws Throwable
 	 */
-	public String isSelected(By by) throws Throwable {
+	public String isSelected(By objLocator) throws Throwable {
 		try {
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			String selectedOrNot;
 			selectedOrNot = w.getAttribute("checked");
 			if (selectedOrNot.equalsIgnoreCase("true") || w.isSelected()) {
@@ -160,14 +160,14 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Drop down function
-	 * @param by
+	 * @param objLocator
 	 * @param value
 	 * @return boolean
 	 * @throws Throwable
 	 */
-	public boolean selectDropdownByValue(By by, String value) throws Throwable {
+	public boolean selectDropdownByValue(By objLocator, String value) throws Throwable {
 		try {
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			Select s = new Select(w);
 			s.selectByValue(value);
 			if (w.getText().equals(value)) {
@@ -193,14 +193,14 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Drop down function
-	 * @param by
+	 * @param objLocator
 	 * @param index
 	 * @return boolean
 	 * @throws Throwable
 	 */
-	public boolean selectDropdownByIndex(By by, int index) throws Throwable {
+	public boolean selectDropdownByIndex(By objLocator, int index) throws Throwable {
 		try {
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			Select s = new Select(w);
 			s.selectByIndex(index);
 			if (w.getText().equals(index)) {
@@ -226,14 +226,14 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Drop down function
-	 * @param by
+	 * @param objLocator
 	 * @param text
 	 * @return boolean
 	 * @throws Throwable
 	 */
-	public boolean selectDropdownByText(By by, String text) throws Throwable {
+	public boolean selectDropdownByText(By objLocator, String text) throws Throwable {
 		try {
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			Select s = new Select(w);
 			s.selectByVisibleText(text);
 			if (w.getText().equals(text)) {
@@ -259,14 +259,14 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Web Element function
-	 * @param by
+	 * @param objLocator
 	 * @param expected
 	 * @return boolean
 	 * @throws Throwable
 	 */
-	public boolean verifyText(By by, String expected) throws Throwable {
+	public boolean verifyText(By objLocator, String expected) throws Throwable {
 		try {
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			if (w.getText() == null || w.getAttribute("value") == null) {
 				log.error("Unable to fetch the text from application");
 				ExtentTestNGITestListener.reportLog.fail("Unable to fetch text from Webpage",
@@ -304,13 +304,13 @@ public class FunctionalLib extends TestBase {
 	 * @author Samrat
 	 * @category Web Element function
 	 * @param elementName
-	 * @param by
+	 * @param objLocator
 	 * @return
 	 */
-	public boolean clickOnElement(String elementName, By by) {
+	public boolean clickOnElement(String elementName, By objLocator) {
 		try {
 			Actions actions = new Actions(driver);
-			WebElement w = driver.findElement(by);
+			WebElement w = driver.findElement(objLocator);
 			if (w.isEnabled() && w.isDisplayed()) {
 				actions.moveToElement(w);
 				actions.perform();
@@ -340,12 +340,12 @@ public class FunctionalLib extends TestBase {
 	 * @author Samrat
 	 * @category Web Element function
 	 * @param elementName
-	 * @param by
+	 * @param objLocator
 	 * @return boolean
 	 */
-	public boolean verifyElementPresent(String elementName, By by) {
+	public boolean verifyElementPresent(String elementName, By objLocator) {
 		try {
-			if (driver.findElements(by).size() != 0) {
+			if (driver.findElements(objLocator).size() != 0) {
 				log.info("The element " + elementName + " is present in the Webpage");
 				ExtentTestNGITestListener.reportLog.pass("The element " + elementName + " is present in the Webpage",
 						MediaEntityBuilder.createScreenCaptureFromPath(captureScreen()).build());
@@ -372,14 +372,14 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Web Element function
-	 * @param by
+	 * @param objLocator
 	 * @param text
 	 * @return boolean
 	 */
-	public boolean setText(By by, String text) {
+	public boolean setText(By objLocator, String text) {
 		try {
 			Actions actions = new Actions(driver);
-			actions.sendKeys(driver.findElement(by), text);
+			actions.sendKeys(driver.findElement(objLocator), text);
 			actions.build().perform();
 			log.info("Successfully entered " + text + " as input in textbox");
 			ExtentTestNGITestListener.reportLog.pass("Successfully entered " + text + " as input in textbox",
@@ -402,15 +402,15 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Web Element function
-	 * @param by
+	 * @param objLocator
 	 * @param text
 	 * @return boolean
 	 */
-	public boolean setSecureText(By by, String text) {
+	public boolean setSecureText(By objLocator, String text) {
 		try {
 			Actions actions = new Actions(driver);
 			byte[] decodedBytes = Base64.decodeBase64(text.getBytes());
-			actions.sendKeys(driver.findElement(by), decodedBytes.toString());
+			actions.sendKeys(driver.findElement(objLocator), decodedBytes.toString());
 			actions.build().perform();
 			log.info("Successfully entered password in textbox");
 			ExtentTestNGITestListener.reportLog.pass("Successfully entered password in textbox",
@@ -433,19 +433,19 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Wait function
-	 * @param by
+	 * @param objLocator
 	 * @param timeToWait
 	 * @return boolean
 	 */
-	public boolean waitForElementPresent(By by, int timeToWait) {
+	public boolean waitForElementPresent(By objLocator, int timeToWait) {
 		try {
 
 			WebDriverWait wait = new WebDriverWait(driver, timeToWait);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-			wait.until(ExpectedConditions.elementToBeClickable(by));
-			wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(objLocator));
+			wait.until(ExpectedConditions.elementToBeClickable(objLocator));
+			wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(objLocator));
 
-			if (driver.findElements(by).size() != 0) {
+			if (driver.findElements(objLocator).size() != 0) {
 				log.info("Element is present in Webpage");
 				ExtentTestNGITestListener.reportLog.pass("Element is found in WebPage",
 						MediaEntityBuilder.createScreenCaptureFromPath(captureScreen()).build());
@@ -504,10 +504,9 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Alert function
-	 * @param by
 	 * @return boolean
 	 */
-	public boolean acceptAlert(By by) {
+	public boolean acceptAlert() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.alertIsPresent());
@@ -539,11 +538,10 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Alert function
-	 * @param by
 	 * @param expectedText
 	 * @return boolean
 	 */
-	public boolean verifyAlertText(By by, String expectedText) {
+	public boolean verifyAlertText(String expectedText) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.alertIsPresent());
@@ -591,11 +589,10 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Alert function
-	 * @param by
 	 * @param input
 	 * @return boolean
 	 */
-	public boolean enterTextAlert(By by, String input) {
+	public boolean enterTextAlert(String input) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			wait.until(ExpectedConditions.alertIsPresent());
@@ -666,15 +663,15 @@ public class FunctionalLib extends TestBase {
 	/**
 	 * @author Samrat
 	 * @category Frame switching
-	 * @param by
+	 * @param objLocator
 	 * @return boolean
 	 */
-	public boolean switchFrame(By by) {
+	public boolean switchFrame(By objLocator) {
 		try {
 			int i, framecount = driver.findElements(By.tagName("iframe")).size();
 			for (i = 0; i <= framecount; i++) {
 				driver.switchTo().frame(i);
-				int count = driver.findElements(by).size();
+				int count = driver.findElements(objLocator).size();
 				if (count > 0) {
 					log.info("Element is found in frame[" + i + "]");
 					break;
