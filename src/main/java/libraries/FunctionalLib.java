@@ -398,7 +398,7 @@ public class FunctionalLib extends TestBase {
 			return false;
 		}
 	}
-	
+
 	/**
 	 * @author Samrat
 	 * @category Web Element function
@@ -876,5 +876,50 @@ public class FunctionalLib extends TestBase {
 			log.error("Error occurred while trying to get system data and time " + e.getMessage());
 		}
 		return str;
+	}
+
+	/**
+	 * @author Samrat
+	 * @category - Javascript functions
+	 */
+	public void scrollToElement(By objLocator, String elementName) {
+		try {
+			WebElement w = driver.findElement(objLocator);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].scrollIntoView();", w);
+			log.info("Scrolled to element " + elementName);
+		} catch (Exception e) {
+			log.error("Error occurred while trying to scroll to element " + e.getMessage());
+		}
+	}
+
+	/**
+	 * @author Samrat
+	 * @category - Javascript functions
+	 */
+	public void scrollToCoordinates(int horizontalCoordinate, int verticalCoordinate) {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			String executeScript = "\"window.scrollBy(" + horizontalCoordinate + "," + verticalCoordinate + ")";
+			js.executeScript(executeScript);
+			log.info("Scrolled to coordinates (" + horizontalCoordinate + "," + verticalCoordinate + ")");
+		} catch (Exception e) {
+			log.error("Error occurred while trying to scroll to coordinates " + e.getMessage());
+		}
+	}
+	
+	/**
+	 * @author Samrat
+	 * @category - Javascript functions
+	 */
+	public void highlightElement(By objLocator, String elementName) {
+		try {
+			WebElement w = driver.findElement(objLocator);
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red;');", w);
+			log.info("Highlighted element " + elementName);
+		} catch (Exception e) {
+			log.error("Error occurred while trying to highlight element " + e.getMessage());
+		}
 	}
 }
